@@ -36,7 +36,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-ROOT_URLCONF = 'My_diplom_Python_Count_Salary.urls'
+ROOT_URLCONF = 'Count_Salary.urls'
 TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates',
               'DIRS': [os.path.join(BASE_DIR, 'templates')], 'APP_DIRS': True,
               'OPTIONS': {'context_processors': [
@@ -45,7 +45,7 @@ TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates',
                   'django.contrib.auth.context_processors.auth',
                   'django.contrib.messages.context_processors.messages',
               ], }, }, ]
-WSGI_APPLICATION = 'My_diplom_Python_Count_Salary.wsgi.application'
+WSGI_APPLICATION = 'Count_Salary.wsgi.application'
 
 DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': BASE_DIR / 'db.sqlite3'}}
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
