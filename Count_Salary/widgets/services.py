@@ -21,7 +21,7 @@ class WeatherService:
         Повертає словник з даними або з інформацією про помилку.
         """
         # 1. Перевірка наявності ключа
-        if not self.API_KEY or self.API_KEY == "0d01e765a3336084ff77ac52111aa9d4":
+        if not self.API_KEY or self.API_KEY == "1ce0dddc46bf4bd643ca7ac5f18f7f42":
             return {"error": "API-ключ для погоди не налаштовано."}
 
         # 2. Формування параметрів запиту

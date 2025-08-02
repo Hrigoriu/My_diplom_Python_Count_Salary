@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}{% if object %}Редагування запису{% else %}Створення запису{% endif %}{% endblock %}
+
+{% block content %}
+<div class="card"><div class="card-header">
+    <h3>
+        {% if object %}Редагування запису за {{ object.month }}/{{ object.year }} для {{ object.employee.get_full_name }}
+        {% else %}Новий запис про зарплату для {{ employee.get_full_name }}{% endif %}
+    </h3>
+</div><div class="card-body">
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <div class="mt-4">
+            <button type="submit" class="btn btn-success">{% if object %}Оновити запис{% else %}Зберегти запис{% endif %}</button>
+            <a href="{% if object %}{% url 'employee-detail' object.employee.pk %}{% else %}{% url 'employee-detail' employee.pk %}{% endif %}" class="btn btn-secondary">Скасувати</a>
+        </div>
+    </form>
+</div></div>
+{% endblock %}
