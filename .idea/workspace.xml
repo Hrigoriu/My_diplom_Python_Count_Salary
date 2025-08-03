@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33ab1a86-f1ea-4e3a-ac7d-b227ef379376" name="Changes" comment="&quot;Seventh commit (make app. employees)&quot;">
-      <change afterPath="$PROJECT_DIR$/Count_Salary/reports/urls.py" afterDir="false" />
+    <list default="true" id="33ab1a86-f1ea-4e3a-ac7d-b227ef379376" name="Changes" comment="&quot;Eighth commit (make app. reports)&quot;">
+      <change afterPath="$PROJECT_DIR$/Count_Salary/configuration/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count_Salary/reports/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/reports/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count_Salary/reports/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/reports/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count_Salary/reports/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/reports/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/Count_Salary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/Count_Salary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/Count_Salary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/Count_Salary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/configuration/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/configuration/migrations/0002_create_default_config.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IT school\Projects\Projects_Django\My_diplom_Python_Count_Salary\Count_Salary\static" />
       <recent name="D:\IT school\Projects\Projects_Django\My_diplom_Python_Count_Salary\Count_Salary" />
     </key>
   </component>
@@ -124,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754220089297</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;Eighth commit (make app. reports)&quot;">
+      <option name="closed" value="true" />
+      <created>1754221335523</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754221335523</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,6 +144,7 @@
     <MESSAGE value="&quot;Fifth commit (make static+templates)&quot;" />
     <MESSAGE value="&quot;Sixth commit (make README)&quot;" />
     <MESSAGE value="&quot;Seventh commit (make app. employees)&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Seventh commit (make app. employees)&quot;" />
+    <MESSAGE value="&quot;Eighth commit (make app. reports)&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Eighth commit (make app. reports)&quot;" />
   </component>
 </project>

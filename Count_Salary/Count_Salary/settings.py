@@ -62,4 +62,4 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 #інші
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
-OPENWEATHER_API_KEY = "1ce0dddc46bf4bd643ca7ac5f18f7f42" # <-- мій КЛЮЧ з додатка
+OPENWEATHER_API_KEY = "0d01e765a3336084ff77ac52111aa9d4" # <-- мій КЛЮЧ з додатка
