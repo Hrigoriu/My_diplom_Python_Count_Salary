@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33ab1a86-f1ea-4e3a-ac7d-b227ef379376" name="Changes" comment="&quot;Fourth commit (make widgets)&quot;">
-      <change afterPath="$PROJECT_DIR$/Count_Salary/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Count_Salary/templates/employees/employee_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Count_Salary/templates/employees/employee_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Count_Salary/templates/employees/employee_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Count_Salary/templates/employees/salaryrecord_confirm_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Count_Salary/templates/employees/salaryrecord_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Count_Salary/templates/index.html" afterDir="false" />
+    <list default="true" id="33ab1a86-f1ea-4e3a-ac7d-b227ef379376" name="Changes" comment="&quot;Fifth commit (make static+templates)&quot;">
+      <change afterPath="$PROJECT_DIR$/README.en.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count_Salary/Count_Salary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/Count_Salary/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count_Salary/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count_Salary/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Count_Salary/widgets/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/widgets/services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IT school\Projects\Projects_Django\My_diplom_Python_Count_Salary\Count_Salary" />
@@ -107,13 +98,22 @@
       <option name="project" value="LOCAL" />
       <updated>1753979743035</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;Fifth commit (make static+templates)&quot;">
+      <option name="closed" value="true" />
+      <created>1754159272617</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754159272617</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Second commit&quot;" />
     <MESSAGE value="&quot;Third commit (make configuration)&quot;" />
     <MESSAGE value="&quot;Fourth commit (make widgets)&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Fourth commit (make widgets)&quot;" />
+    <MESSAGE value="&quot;Fifth commit (make static+templates)&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Fifth commit (make static+templates)&quot;" />
   </component>
 </project>
