@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33ab1a86-f1ea-4e3a-ac7d-b227ef379376" name="Changes" comment="&quot;Fifth commit (make static+templates)&quot;">
-      <change afterPath="$PROJECT_DIR$/README.en.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="33ab1a86-f1ea-4e3a-ac7d-b227ef379376" name="Changes" comment="&quot;Sixth commit (make README)&quot;">
+      <change afterPath="$PROJECT_DIR$/Count_Salary/employees/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Count_Salary/employees/services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Count_Salary/employees/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/employees/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/employees/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/employees/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/employees/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Count_Salary/employees/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Count_Salary/employees/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -106,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754159272617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;Sixth commit (make README)&quot;">
+      <option name="closed" value="true" />
+      <created>1754217567404</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1754217567404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -114,6 +127,7 @@
     <MESSAGE value="&quot;Third commit (make configuration)&quot;" />
     <MESSAGE value="&quot;Fourth commit (make widgets)&quot;" />
     <MESSAGE value="&quot;Fifth commit (make static+templates)&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Fifth commit (make static+templates)&quot;" />
+    <MESSAGE value="&quot;Sixth commit (make README)&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Sixth commit (make README)&quot;" />
   </component>
 </project>
