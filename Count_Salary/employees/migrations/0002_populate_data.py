@@ -3,12 +3,12 @@ import random
 from decimal import Decimal
 
 # Списки даних для генерації реалістичних імен
-FIRST_NAMES = ["Олександр", "Андрій", "Дмитро", "Сергій", "Микола", "Іван", "Анна", "Олена", "Тетяна", "Марія",
-               "Наталія", "Світлана"]
-LAST_NAMES = ["Шевченко", "Коваленко", "Бондаренко", "Ткаченко", "Петренко", "Іванов", "Захарченко", "Павленко",
+FIRST_NAMES = ['Олександр', 'Андрій', 'Дмитро', 'Сергій', 'Микола', 'Іван', 'Анна', 'Олена', 'Тетяна', 'Марія',
+               'Наталія', 'Світлана']
+LAST_NAMES = ['Шевченко', 'Коваленко', 'Бондаренко', 'Ткаченко', 'Петренко', 'Іванов', 'Захарченко', 'Павленко',
               "Сидоренко", "Кравченко"]
-PATRONYMICS = ["Олександрович", "Андрійович", "Дмитрович", "Сергійович", "Іванович", "Олександрівна", "Андріївна",
-               "Дмитрівна", "Сергіївна"]
+PATRONYMICS = ['Олександрович', 'Андрійович', 'Дмитрович', 'Сергійович', 'Іванович', 'Олександрівна', 'Андріївна',
+               'Дмитрівна', 'Сергіївна']
 LEVELS = ['JUN', 'MID', 'SEN', 'LEAD']
 
 
@@ -28,7 +28,7 @@ def populate_employees_and_salaries(apps, schema_editor):
     try:
         config = SalaryConfiguration.objects.get()
     except SalaryConfiguration.DoesNotExist:
-        raise Exception("Помилка! Міграція для створення конфігурації не була застосована. Запустіть 'migrate' знову.")
+        raise Exception('Помилка! Міграція для створення конфігурації не була застосована. Запустіть \'migrate\' знову.')
 
     # Готує словник з налаштуваннями для швидкого доступу
     level_map = {
@@ -38,7 +38,7 @@ def populate_employees_and_salaries(apps, schema_editor):
         'LEAD': (config.lead_base_rate, config.lead_coeff),
     }
 
-    print("\n[Employees] Налаштування зарплат завантажено. Починаємо створювати співробітників...")
+    print('\n[Employees] Налаштування зарплат завантажено. Починаємо створювати співробітників...')
 
     employees = []
     for _ in range(20):
@@ -52,15 +52,15 @@ def populate_employees_and_salaries(apps, schema_editor):
 
     records_to_bulk_create = []
     for employee in employees:
-        current_usd_rate = Decimal(random.uniform(39.5, 42.0)).quantize(Decimal("0.01"))
-        current_eur_rate = Decimal(random.uniform(43.0, 45.5)).quantize(Decimal("0.01"))
+        current_usd_rate = Decimal(random.uniform(39.5, 42.0)).quantize(Decimal('0.01'))
+        current_eur_rate = Decimal(random.uniform(43.0, 45.5)).quantize(Decimal('0.01'))
         base_rate, coefficient = level_map.get(employee.level)
 
         for i in range(24):
             year, month = 2023 + (i // 12), 1 + (i % 12)
             standard_hours = Decimal('160.00')
-            actual_hours = standard_hours + Decimal(random.uniform(-10.0, 15.0)).quantize(Decimal("0.01"))
-            tasks_value = Decimal(random.uniform(5000, 25000)).quantize(Decimal("0.01"))
+            actual_hours = standard_hours + Decimal(random.uniform(-10.0, 15.0)).quantize(Decimal('0.01'))
+            tasks_value = Decimal(random.uniform(5000, 25000)).quantize(Decimal('0.01'))
 
             # --- ЯВНИЙ РОЗРАХУНОК ЗАРПЛАТИ (логіка з SalaryCalculationService) ---
             hourly_part = (base_rate * actual_hours) / standard_hours if standard_hours > 0 else Decimal('0')
@@ -76,12 +76,12 @@ def populate_employees_and_salaries(apps, schema_editor):
             )
             records_to_bulk_create.append(record)
 
-            current_usd_rate += Decimal(random.uniform(-0.5, 0.5)).quantize(Decimal("0.01"))
-            current_eur_rate += Decimal(random.uniform(-0.5, 0.5)).quantize(Decimal("0.01"))
+            current_usd_rate += Decimal(random.uniform(-0.5, 0.5)).quantize(Decimal('0.01'))
+            current_eur_rate += Decimal(random.uniform(-0.5, 0.5)).quantize(Decimal('0.01'))
 
     # Створює всі 480 записів одним швидким запитом!
     SalaryRecord.objects.bulk_create(records_to_bulk_create)
-    print(f"[Employees] Створено та розраховано зарплати для {len(records_to_bulk_create)} записів.")
+    print(f'[Employees] Створено та розраховано зарплати для {len(records_to_bulk_create)} записів.')
 
 
 class Migration(migrations.Migration):

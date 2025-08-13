@@ -14,14 +14,14 @@ def create_default_configuration(apps, schema_editor):
     SalaryConfiguration.objects.get_or_create()
 
     # Виводить повідомлення в консоль, щоб бачити прогрес міграції
-    print("\n[Configuration] Створено екземпляр конфігурації за замовчуванням.")
+    print('\n[Configuration] Створено екземпляр конфігурації за замовчуванням.')
 
     # Створює базові типи завдань, щоб система не була порожньою
     TaskType.objects.get_or_create(name='Simple', defaults={'cost': 100.00})
     TaskType.objects.get_or_create(name='Medium', defaults={'cost': 250.00})
     TaskType.objects.get_or_create(name='Complex', defaults={'cost': 500.00})
 
-    print("[Configuration] Створено базові типи завдань.")
+    print('[Configuration] Створено базові типи завдань.')
 
 
 class Migration(migrations.Migration):

@@ -14,25 +14,25 @@ class SalaryConfiguration(SingletonModel):
     """
     # Базові ставки за замовчуванням для кожного рівня
     junior_base_rate = models.DecimalField(max_digits=10, decimal_places=2, default=10000.0,
-                                           verbose_name="Базова ставка Junior (грн)")
+                                           verbose_name='Базова ставка Junior (грн)')
     middle_base_rate = models.DecimalField(max_digits=10, decimal_places=2, default=20000.0,
-                                           verbose_name="Базова ставка Middle (грн)")
+                                           verbose_name='Базова ставка Middle (грн)')
     senior_base_rate = models.DecimalField(max_digits=10, decimal_places=2, default=35000.0,
-                                           verbose_name="Базова ставка Senior (грн)")
+                                           verbose_name='Базова ставка Senior (грн)')
     lead_base_rate = models.DecimalField(max_digits=10, decimal_places=2, default=50000.0,
-                                         verbose_name="Базова ставка Team Lead (грн)")
+                                         verbose_name='Базова ставка Team Lead (грн)')
 
     # Коефіцієнти за замовчуванням для кожного рівня
-    junior_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=1.0, verbose_name="Коефіцієнт Junior")
-    middle_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=1.5, verbose_name="Коефіцієнт Middle")
-    senior_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=2.0, verbose_name="Коефіцієнт Senior")
-    lead_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=2.5, verbose_name="Коефіцієнт Team Lead")
+    junior_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=1.0, verbose_name='Коефіцієнт Junior')
+    middle_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=1.5, verbose_name='Коефіцієнт Middle')
+    senior_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=2.0, verbose_name='Коефіцієнт Senior')
+    lead_coeff = models.DecimalField(max_digits=4, decimal_places=2, default=2.5, verbose_name='Коефіцієнт Team Lead')
 
     def __str__(self):
-        return "Глобальні налаштування зарплати"
+        return 'Глобальні налаштування зарплати'
 
     class Meta:
-        verbose_name = "Глобальні налаштування зарплати"
+        verbose_name = 'Глобальні налаштування зарплати'
 
 
 class TaskType(models.Model):

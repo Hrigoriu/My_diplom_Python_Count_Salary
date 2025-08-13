@@ -1,3 +1,4 @@
+"""  "Серце" проєкту.  """
 import os
 from pathlib import Path
 
@@ -6,7 +7,7 @@ SECRET_KEY = 'django-insecure-change-this-in-production' # Для розробк
 DEBUG = True
 ALLOWED_HOSTS = []
 
-# --- Додатки проекту ---
+# --- Додатки проєкту ---
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

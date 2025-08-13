@@ -17,7 +17,7 @@ class SalaryCalculationService:
         try:
             self.config = SalaryConfiguration.get_solo()
         except SalaryConfiguration.DoesNotExist:
-            raise ValueError("Глобальні налаштування зарплати не знайдено! Створіть їх в адмін-панелі.")
+            raise ValueError('Глобальні налаштування зарплати не знайдено! Створіть їх в адмін-панелі.')
 
     def _get_base_rate_and_coeff(self):
         """Приватний метод для отримання ставки та коефіцієнта залежно від рівня."""

@@ -53,6 +53,7 @@ class EmployeeListView(ListView):
 
     def get_context_data(self, **kwargs):
         """Передаємо параметри запиту в шаблон для коректної роботи пагінації."""
+        """Пагінація - розбиття великого списку елементів (наприклад, товарів, статей) на сторінки"""
         context = super().get_context_data(**kwargs)
         context['current_query'] = self.request.GET.get('q', '')
         context['current_sort'] = self.request.GET.get('sort', 'name')
